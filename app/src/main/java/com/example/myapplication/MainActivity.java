@@ -21,7 +21,7 @@ public class MainActivity extends YouTubeBaseActivity {
 
     YouTubePlayerView mYoutubePlayerView;
 
-    Intent i,q;
+    Intent i,q,r;
     YouTubePlayer.OnInitializedListener mOnInitializedListener;
 
     @Override
