@@ -1,20 +1,12 @@
 package com.example.myapplication;
 
 import android.content.Context;
-import android.content.Intent;
-import android.content.IntentSender;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import com.nostra13.universalimageloader.cache.memory.impl.WeakMemoryCache;
@@ -73,9 +65,9 @@ public class CustomListAdapter extends ArrayAdapter<Cards> {
             result = convertView;
         }
 
-        Animation animation = AnimationUtils.loadAnimation(mContext,
-                (position > lastposition )? R.anim.load_down_anim : R.anim.load_up_anim);
-        result.startAnimation(animation);
+        //Animation animation = AnimationUtils.loadAnimation(mContext,
+            //    (position > lastposition )? R.anim.load_down_anim : R.anim.load_up_anim);
+       // result.startAnimation(animation);
         lastposition = position;
 
         holder.title.setText(title);
